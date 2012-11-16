@@ -1,0 +1,146 @@
+
+@import "bootstrap";
+
+$negroClaro: rgba(10,10,10,.8);
+$azul: rgb(82, 168, 236);
+$azulClaro: rgba(82, 168, 236, 0.8);
+$verde: rgba(27,210,140,.7);
+$verdeOscuro: rgba(27,210,140,.4);
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+
+::-webkit-input-placeholder  { color:#f00; }
+input:-moz-placeholder { color:#f00; }
+body{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+	background: url(wall-3.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#top{
+	background-color: $negroClaro;
+	padding: 35px 50px 0 0;	
+	text-align: right;	
+	height: 70px;
+	border-bottom: 1px solid $azulClaro;
+	a.home{
+		text-decoration: none;
+		float: left;
+		margin-left: 150px;
+		font-size: 39px;
+		-webkit-transition: all .3s ease-in;
+		-moz-transition: all .3s ease-in;
+		-ms-transition: all .3s ease-in;
+	}
+	a.home:hover{		
+		color: $azul;
+		-moz-transition: all .3s ease-in;
+		-ms-transition: all .3s ease-in;
+		-webkit-transition: all .3s ease-in;
+		transition: all .3s ease-in;
+	}
+	a{
+		color: rgba(240,240,250,.9);
+		text-shadow: 0 3px 10px $azul;
+		margin: 0 15px 0 15px;
+	}
+
+}
+.centro{
+	margin: 100px 0 0 100px;
+	width: 600px;
+	height: 200px;
+	padding: 30px;
+	background-color: $negroClaro;
+	border-color: $azulClaro;
+	color: $verde;
+	text-align: center;
+	h2{
+		font-family: 'Audiowide';
+		font-size: 3.5em;
+		margin-bottom: 10px;
+		text-shadow: 0 3px 3px $black;
+	}
+	span{
+		color: $azul;
+	}
+	input[type="text"]{
+		background-color: rgba(10,10,10,.9);
+		width: 400px;
+		height: 1.8em;
+		border-right: 0;
+		font-size: 1.4em;
+		color: $blue;
+		border-color: $verde;		
+	    letter-spacing: 1.5px;
+	    text-shadow: 0 1px $azulClaro;	    
+	}
+	-webkit-box-shadow: 0 0 50px $azul;
+	input::-webkit-input-placeholder {
+	    color: $verdeOscuro;
+	    letter-spacing: 1.5px;
+	    text-shadow: 0 1px $azulClaro;
+	    font-style: italic;
+	    
+	}
+	input:-moz-placeholder {
+	    color: $verdeOscuro;
+	    text-shadow: 0 1px $azulClaro;
+	    font-style: italic;
+	}
+	input:-ms-input-placeholder {
+	    color: $verdeOscuro;
+	    text-shadow: 0 1px $azulClaro;
+	    font-style: italic;
+	}
+	div{
+		margin: 30px 0 30px 0;		
+	}
+	button {
+	    overflow: visible;
+	    position: relative;	    
+	    float: right;
+	    left: -39px;
+	    border: 0;
+	    padding: 0;
+	    cursor: pointer;
+	    height: 45px;
+	    width: 110px;
+	    font: bold 16px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	    color: #fff;
+	    text-transform: uppercase;
+	    background: $azulClaro;
+	    border-radius: 0 3px 3px 0;      
+	    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+	    b{
+	    	display: inline-block;
+	    	margin-right: 5px;
+
+	    }
+	}
+	button:before { /* left arrow */
+	    content: '';
+	    position: absolute;
+	    border-width: 8px 8px 8px 0;
+	    border-style: solid solid solid none;
+	    border-color: transparent $azulClaro transparent;
+	    top: 12px;
+	    left: -8px;
+	}
+}
+#footer{
+   	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+	background-color: $negroClaro;
+	border-top: 1px solid $azul;
+}
