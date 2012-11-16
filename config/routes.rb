@@ -1,6 +1,11 @@
 SonidoBasico::Application.routes.draw do
   
   root to: "pagina#index"
+
+  match '/buscar/:id', to: "pagina#buscar"
+  #resources :busqueda
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
